@@ -3,8 +3,6 @@ Unit and regression test for the bead_spring package.
 """
 
 # Import package, test suite, and other packages as needed
-import bead_spring
-import pytest
 import sys
 import mbuild as mb
 
@@ -17,6 +15,6 @@ def test_import():
     assert "BeadSpring" in vars(mb.recipes).keys()
 
 def test_default_build():
-    polymer = bead_spring.bead_spring.BeadSpring()
+    polymer = mb.recipes.BeadSpring()
     assert polymer.n_particles == 10
     assert set([c.name for c in polymer.children]) == {'bead'}

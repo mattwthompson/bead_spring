@@ -4,6 +4,7 @@ Primary function of recipe here
 
 import mbuild as mb
 
+
 class BeadSpring(mb.Compound):
     """
     Example class that would go in your recipe.
